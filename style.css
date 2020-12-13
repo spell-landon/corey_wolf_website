@@ -1,0 +1,954 @@
+:root {
+    --vh;
+}
+
+html {
+    font-size: 12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-family: 'Cardo', serif;
+    color: #c0ccd4;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 0px;
+    background-image: linear-gradient(to bottom, #545a6b, #262830);
+    background: cover no-repeat;
+}
+body {
+
+}
+   
+div, a, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: #ffce00;
+   }
+
+/*  MAIN PAGE  */
+.main_page {
+    top: 0;
+    left: 0;
+    margin: 0rem;
+    z-index: 0;
+}
+/*  ABOUT PAGE  */
+.about_page {
+    top: 0;
+    left: 0;
+    margin: 0rem;
+    z-index: 0;
+    height: auto;
+}
+/*  CONTACT PAGE  */
+.contact_page {
+    top: 0;
+    left: 0;
+    margin: 0rem;
+    z-index: 0;
+    height: 80vh;
+}
+
+
+/*  TOP NAVIGATION BAR  */
+.topnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 2;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    background-color: #c0ccd4;
+    overflow: hidden;
+    opacity: 0.8;
+    height: auto;
+}
+
+#name_navbar {
+    float: left;
+    text-decoration: none;
+    width: 50%;
+    letter-spacing: 0.5em;
+    font-size: 25px;
+    margin: -1.5rem;
+}
+#name_navbar:hover {
+    background-color: #484d5c;
+    color: #ffce00;
+    transition: 0.5s;
+}
+#name_navbar:active {
+    color: #c0ccd4;
+}
+
+.topnav a {
+    float: right;
+    color: rgb(0, 0, 0);
+    padding: 1.5em;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.topnav a:hover {
+    background-color: #484d5c;
+    color: #ffce00;
+    transition: 0.5s;
+}
+.topnav a:active {
+    color: #c0ccd4;
+}
+
+
+
+
+/*  CIRCLE IMAGE  */
+.photo {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    /*border: 5px solid #484d5c;*/
+    border: none;
+    border-radius: 50%;
+    box-shadow: 5px 10px 30px 5px rgba(0, 0, 0, 0.479);
+    height: 400px;
+    width: 400px;
+    margin: auto;
+    margin-top: 20vh;
+    /*margin-top: 15vh;*/
+}
+.photo img {
+    width: 100%;
+    height: auto;
+    margin-left: -50px;
+}
+
+
+
+/*  MAIN NAME UNDERNEATH CIRCLUAR IMAGE  */
+#main_name {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: #ffce00;
+    text-align: center;
+    margin-top: 5vh;
+    font-size: 5rem;
+}
+
+
+
+
+/*  PARAGRAPH UNDERNEATH MAIN NAME  */
+#comp_anim {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: -1rem;
+}
+
+
+
+
+/*  PROJECTS SECTION  */
+.projects_container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background: inherit;
+    padding: 5px;
+    list-style: none;
+}
+.individual_projects {
+    background: #5b6174;
+    margin: 0vh 4rem 5vh 4rem;
+    height: 700px;
+    width: 600px;
+    text-align: center;
+    border-radius: 25px;
+    padding: 25px;
+    font-size: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    opacity: 0;
+    transform: translate(0, 20px); transition: all 1.5s;
+}
+.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+/*  ABOUT ME PARAGRAPH  */
+#about_me {
+    background: #73788aa4;
+    color: #c0ccd4;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    font-size: 2rem;
+    text-transform: none;
+    margin: 6vh 4rem 8rem;
+    bottom: 300px;
+    padding: 3rem;
+    
+}
+
+
+
+
+/*  CONTACT ME INFORMATION  */
+#contact_me {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    list-style: none;
+    background: #73788aa4;
+    color: #c0ccd4;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    font-size: 2rem;
+    text-transform: none;
+    margin: 6vh 8rem 8rem;
+    bottom: 300px;
+    padding: 3rem;
+}
+#email {
+    text-decoration: none;
+}
+#facebook {
+    text-decoration: none;
+}
+#instagram {
+    text-decoration: none;
+}
+#discord {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+/*  CONTACT ME ICONS -----------------------------  */
+/*  EMAIL  */
+.fa-envelope {
+    border-radius: 25px;
+    font-size: 5rem;
+    padding: 3rem;
+}
+.fa-envelope:hover {
+    transform: scale(1.2)translateY(5%);
+    color: #484d5c;
+    transition: 0.005s;
+
+}
+.fa-envelope:active {
+    background-color: #646a7ea4
+}
+
+/*  FACEBOOK  */
+.fa-facebook {
+    border-radius: 25px;
+    font-size: 5rem;
+    padding: 3rem;
+}
+.fa-facebook:hover {
+    transform: scale(1.2)translateY(5%);
+    color: #484d5c;
+    transition: 0.005s;
+}
+.fa-facebook:active {
+    background-color: #646a7ea4
+}
+
+/*  INSTAGRAM  */
+.fa-instagram {
+    border-radius: 25px;
+    font-size: 5rem;
+    padding: 3rem;
+}
+.fa-instagram:hover {
+    transform: scale(1.2)translateY(5%);
+    color: #484d5c;
+    transition: 0.005s;
+}
+.fa-instagram:active {
+    background-color: #646a7ea4
+}
+
+/*  DISCORD  */
+.fa-discord {
+    border-radius: 25px;
+    font-size: 5rem;
+    padding: 3rem;
+}
+.fa-discord:hover {
+    transform: scale(1.2)translateY(5%);
+    color: #484d5c;
+    transition: 0.005s;
+}
+.fa-discord:active {
+    background-color: #646a7ea4
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  MEDIA QUERIES FOR SCREEN SIZES  */
+
+/* ----------- iPhone 11 ----------- */
+/* 1792x828px at 326ppi */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #name_navbar {
+        letter-spacing: 0em;
+        font-size: 25px;
+        margin: -1.5rem;
+        width: auto;
+    }
+    #name_navbar:active {
+        background-color: #484d5c;
+        color: #ffce00;
+    }
+    
+    .photo {
+        height: 200px;
+        width: 200px;
+        margin-top: 17vh;
+    }
+    #comp_anim {
+        font-size: 2rem;
+    }
+    .individual_projects {
+        margin: 1vh;
+        margin-bottom: 5rem;
+        height: 75vh;
+        width: 100vw;
+        font-size: 2rem;
+    }
+    #about_me {
+        margin: 5vh 1vh 5rem 1vh;
+        
+        padding: 2rem;
+        font-size: 1.5rem;
+    }
+    #contact_me {
+        margin: 15vh 1vh 5rem 1vh;
+        
+        padding: 2rem;
+        font-size: 1.5rem;
+    }
+    /*  CONTACT ME ICONS -----------------------------  */
+/*  EMAIL  */
+.fa-envelope {
+    border-radius: 25px;
+    font-size: 3rem;
+    padding: 1.5rem;
+}
+.fa-envelope:hover {
+    transform: none;
+    color: #646a7ea4;
+    transition: none;
+}
+.fa-envelope:active {
+    background-color: #646a7ea4
+}
+
+/*  FACEBOOK  */
+.fa-facebook {
+    border-radius: 25px;
+    font-size: 3rem;
+    padding: 1.5rem;
+}
+.fa-facebook:hover {
+    transform: none;
+    color: #646a7ea4;
+    transition: none;
+}
+.fa-facebook:active {
+    background-color: #646a7ea4
+}
+
+/*  INSTAGRAM  */
+.fa-instagram {
+    border-radius: 25px;
+    font-size: 3rem;
+    padding: 1.5rem;
+}
+.fa-instagram:hover {
+    transform: none;
+    color: #646a7ea4;
+    transition: none;
+}
+.fa-instagram:active {
+    background-color: #646a7ea4
+}
+
+/*  DISCORD  */
+.fa-discord {
+    border-radius: 25px;
+    font-size: 3rem;
+    padding: 1.5rem;
+}
+.fa-discord:hover {
+    transform: none;
+    color: #646a7ea4;
+    transition: none;
+}
+.fa-discord:active {
+    background-color: #646a7ea4
+}
+  }
+
+
+/* ----------- iPhone 4 and 4S ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #name_navbar {
+        letter-spacing: 0em;
+        font-size: 25px;
+        margin: -1.5rem;
+        width: auto;
+    }
+    #name_navbar:active {
+        background-color: #484d5c;
+        color: #ffce00;
+    }
+    
+    .photo {
+        height: 200px;
+        width: 200px;
+        margin-top: 17vh;
+    }
+    #comp_anim {
+        font-size: 2rem;
+    }
+    .individual_projects {
+        margin: 1vh;
+        margin-bottom: 5rem;
+        height: 75vh;
+        width: 100vw;
+        font-size: 2rem;
+    }
+    #about_me {
+        margin: 5vh 1vh 5rem 1vh;
+        
+        padding: 2rem;
+        font-size: 1.5rem;
+    }
+    #contact_me {
+        margin: 15vh 1vh 5rem 1vh;
+        
+        padding: 2rem;
+        font-size: 1.5rem;
+    }
+    /*  CONTACT ME ICONS -----------------------------  */
+/*  EMAIL  */
+.fa-envelope {
+    border-radius: 25px;
+    font-size: 3rem;
+    padding: 1.5rem;
+}
+.fa-envelope:hover {
+    transform: none;
+    color: #646a7ea4;
+    transition: none;
+}
+.fa-envelope:active {
+    background-color: #646a7ea4
+}
+
+/*  FACEBOOK  */
+.fa-facebook {
+    border-radius: 25px;
+    font-size: 3rem;
+    padding: 1.5rem;
+}
+.fa-facebook:hover {
+    transform: none;
+    color: #646a7ea4;
+    transition: none;
+}
+.fa-facebook:active {
+    background-color: #646a7ea4
+}
+
+/*  INSTAGRAM  */
+.fa-instagram {
+    border-radius: 25px;
+    font-size: 3rem;
+    padding: 1.5rem;
+}
+.fa-instagram:hover {
+    transform: none;
+    color: #646a7ea4;
+    transition: none;
+}
+.fa-instagram:active {
+    background-color: #646a7ea4
+}
+
+/*  DISCORD  */
+.fa-discord {
+    border-radius: 25px;
+    font-size: 3rem;
+    padding: 1.5rem;
+}
+.fa-discord:hover {
+    transform: none;
+    color: #646a7ea4;
+    transition: none;
+}
+.fa-discord:active {
+    background-color: #646a7ea4
+}
+  }
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #name_navbar {
+        letter-spacing: 0em;
+        font-size: 25px;
+        margin: -1.5rem;
+        width: auto;
+    }
+    #name_navbar:active {
+        background-color: #484d5c;
+        color: #ffce00;
+    }
+    
+    .photo {
+        height: 200px;
+        width: 200px;
+        margin-top: 17vh;
+    }
+    #comp_anim {
+        font-size: 2rem;
+    }
+    .individual_projects {
+        margin: 1vh;
+        margin-bottom: 5rem;
+        height: 75vh;
+        width: 100vw;
+        font-size: 2rem;
+    }
+    #about_me {
+        margin: 5vh 1vh 5rem 1vh;
+        
+        padding: 2rem;
+        font-size: 1.5rem;
+    }
+    #contact_me {
+        margin: 15vh 1vh 5rem 1vh;
+        
+        padding: 2rem;
+        font-size: 1.5rem;
+    }
+    /*  CONTACT ME ICONS -----------------------------  */
+/*  EMAIL  */
+.fa-envelope {
+    border-radius: 25px;
+    font-size: 3rem;
+    padding: 1.5rem;
+}
+.fa-envelope:hover {
+    transform: none;
+    color: #646a7ea4;
+    transition: none;
+}
+.fa-envelope:active {
+    background-color: #646a7ea4
+}
+
+/*  FACEBOOK  */
+.fa-facebook {
+    border-radius: 25px;
+    font-size: 3rem;
+    padding: 1.5rem;
+}
+.fa-facebook:hover {
+    transform: none;
+    color: #646a7ea4;
+    transition: none;
+}
+.fa-facebook:active {
+    background-color: #646a7ea4
+}
+
+/*  INSTAGRAM  */
+.fa-instagram {
+    border-radius: 25px;
+    font-size: 3rem;
+    padding: 1.5rem;
+}
+.fa-instagram:hover {
+    transform: none;
+    color: #646a7ea4;
+    transition: none;
+}
+.fa-instagram:active {
+    background-color: #646a7ea4
+}
+
+/*  DISCORD  */
+.fa-discord {
+    border-radius: 25px;
+    font-size: 3rem;
+    padding: 1.5rem;
+}
+.fa-discord:hover {
+    transform: none;
+    color: #646a7ea4;
+    transition: none;
+}
+.fa-discord:active {
+    background-color: #646a7ea4
+}
+  }
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #name_navbar {
+        letter-spacing: 0em;
+        font-size: 25px;
+        margin: -1.5rem;
+        width: auto;
+    }
+    #name_navbar:active {
+        background-color: #484d5c;
+        color: #ffce00;
+    }
+    
+    .photo {
+        height: 200px;
+        width: 200px;
+        margin-top: 17vh;
+    }
+    #comp_anim {
+        font-size: 2rem;
+    }
+    .individual_projects {
+        margin: 1vh;
+        margin-bottom: 5rem;
+        height: 75vh;
+        width: 100vw;
+        font-size: 2rem;
+    }
+    #about_me {
+        margin: 5vh 1vh 5rem 1vh;
+        
+        padding: 2rem;
+        font-size: 1.5rem;
+    }
+    #contact_me {
+        margin: 15vh 1vh 5rem 1vh;
+        
+        padding: 2rem;
+        font-size: 1.5rem;
+    }
+    /*  CONTACT ME ICONS -----------------------------  */
+/*  EMAIL  */
+.fa-envelope {
+    border-radius: 25px;
+    font-size: 3rem;
+    padding: 1.5rem;
+}
+.fa-envelope:hover {
+    transform: none;
+    color: #646a7ea4;
+    transition: none;
+}
+.fa-envelope:active {
+    background-color: #646a7ea4
+}
+
+/*  FACEBOOK  */
+.fa-facebook {
+    border-radius: 25px;
+    font-size: 3rem;
+    padding: 1.5rem;
+}
+.fa-facebook:hover {
+    transform: none;
+    color: #646a7ea4;
+    transition: none;
+}
+.fa-facebook:active {
+    background-color: #646a7ea4
+}
+
+/*  INSTAGRAM  */
+.fa-instagram {
+    border-radius: 25px;
+    font-size: 3rem;
+    padding: 1.5rem;
+}
+.fa-instagram:hover {
+    transform: none;
+    color: #646a7ea4;
+    transition: none;
+}
+.fa-instagram:active {
+    background-color: #646a7ea4
+}
+
+/*  DISCORD  */
+.fa-discord {
+    border-radius: 25px;
+    font-size: 3rem;
+    padding: 1.5rem;
+}
+.fa-discord:hover {
+    transform: none;
+    color: #646a7ea4;
+    transition: none;
+}
+.fa-discord:active {
+    background-color: #646a7ea4
+}
+  }
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #name_navbar {
+        letter-spacing: 0em;
+        font-size: 25px;
+        margin: -1.5rem;
+        width: auto;
+    }
+    #name_navbar:active {
+        background-color: #484d5c;
+        color: #ffce00;
+    }
+    
+    .photo {
+        height: 200px;
+        width: 200px;
+        margin-top: 17vh;
+    }
+    #comp_anim {
+        font-size: 2rem;
+    }
+    .individual_projects {
+        margin: 1vh;
+        margin-bottom: 5rem;
+        height: 75vh;
+        width: 100vw;
+        font-size: 2rem;
+    }
+    #about_me {
+        margin: 5vh 1vh 5rem 1vh;
+        
+        padding: 2rem;
+        font-size: 1.5rem;
+    }
+    #contact_me {
+        margin: 15vh 1vh 5rem 1vh;
+        
+        padding: 2rem;
+        font-size: 1.5rem;
+    }
+    /*  CONTACT ME ICONS -----------------------------  */
+/*  EMAIL  */
+.fa-envelope {
+    border-radius: 25px;
+    font-size: 3rem;
+    padding: 1.5rem;
+}
+.fa-envelope:hover {
+    transform: none;
+    color: #646a7ea4;
+    transition: none;
+}
+.fa-envelope:active {
+    background-color: #646a7ea4
+}
+
+/*  FACEBOOK  */
+.fa-facebook {
+    border-radius: 25px;
+    font-size: 3rem;
+    padding: 1.5rem;
+}
+.fa-facebook:hover {
+    transform: none;
+    color: #646a7ea4;
+    transition: none;
+}
+.fa-facebook:active {
+    background-color: #646a7ea4
+}
+
+/*  INSTAGRAM  */
+.fa-instagram {
+    border-radius: 25px;
+    font-size: 3rem;
+    padding: 1.5rem;
+}
+.fa-instagram:hover {
+    transform: none;
+    color: #646a7ea4;
+    transition: none;
+}
+.fa-instagram:active {
+    background-color: #646a7ea4
+}
+
+/*  DISCORD  */
+.fa-discord {
+    border-radius: 25px;
+    font-size: 3rem;
+    padding: 1.5rem;
+}
+.fa-discord:hover {
+    transform: none;
+    color: #646a7ea4;
+    transition: none;
+}
+.fa-discord:active {
+    background-color: #646a7ea4
+}
+  }
+
+/* ----------- iPhone X ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #name_navbar {
+        letter-spacing: 0em;
+        font-size: 25px;
+        margin: -1.5rem;
+        width: auto;
+    }
+    #name_navbar:active {
+        background-color: #484d5c;
+        color: #ffce00;
+    }
+    
+    .photo {
+        height: 200px;
+        width: 200px;
+        margin-top: 17vh;
+    }
+    #comp_anim {
+        font-size: 2rem;
+    }
+    .individual_projects {
+        margin: 1vh;
+        margin-bottom: 5rem;
+        height: 75vh;
+        width: 100vw;
+        font-size: 2rem;
+    }
+    #about_me {
+        margin: 5vh 1vh 5rem 1vh;
+        
+        padding: 2rem;
+        font-size: 1.5rem;
+    }
+    #contact_me {
+        margin: 15vh 1vh 5rem 1vh;
+        
+        padding: 2rem;
+        font-size: 1.5rem;
+    }
+    /*  CONTACT ME ICONS -----------------------------  */
+    /*  EMAIL  */
+    .fa-envelope {
+        border-radius: 25px;
+        font-size: 3rem;
+        padding: 1.5rem;
+    }
+.fa-envelope:hover {
+    transform: none;
+    color: #646a7ea4;
+    transition: none;
+}
+.fa-envelope:active {
+    background-color: #646a7ea4
+}
+
+/*  FACEBOOK  */
+.fa-facebook {
+    border-radius: 25px;
+    font-size: 3rem;
+    padding: 1.5rem;
+}
+.fa-facebook:hover {
+    transform: none;
+    color: #646a7ea4;
+    transition: none;
+}
+.fa-facebook:active {
+    background-color: #646a7ea4
+}
+
+/*  INSTAGRAM  */
+.fa-instagram {
+    border-radius: 25px;
+    font-size: 3rem;
+    padding: 1.5rem;
+}
+.fa-instagram:hover {
+    transform: none;
+    color: #646a7ea4;
+    transition: none;
+}
+.fa-instagram:active {
+    background-color: #646a7ea4
+}
+
+/*  DISCORD  */
+.fa-discord {
+    border-radius: 25px;
+    font-size: 3rem;
+    padding: 1.5rem;
+}
+.fa-discord:hover {
+    transform: none;
+    color: #646a7ea4;
+    transition: none;
+}
+.fa-discord:active {
+    background-color: #646a7ea4
+}
+  }
+
